@@ -23,18 +23,7 @@
 export default {
   name: "MainLayout",
   data() {
-    return {
-      menuIcon: "mdi-menu"
-    };
-  },
-
-  methods: {
-    openMenu() {
-      this.menuIcon = "mdi-menu-open";
-    },
-    closeMenu() {
-      this.menuIcon = "mdi-menu";
-    }
+    return {};
   }
 };
 </script>
