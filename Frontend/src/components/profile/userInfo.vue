@@ -68,13 +68,13 @@ export default {
       changeInfo: false,
       user: {
         id: 0,
-        firstName: "Lars",
-        lastName: "Larsen",
+        firstName: "Rasputin",
+        lastName: "Hansen",
         country: "Denmark",
         address: "Bøllegade 13",
         zipCode: 8700,
         city: "Horsens",
-        phone: 12345678,
+        phone: 12341231,
         email: "email@email.com",
         gender: "Mand"
       }

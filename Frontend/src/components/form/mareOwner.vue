@@ -1,7 +1,7 @@
 <template>
   <div>
-    <q-card class="row q-my-md">
-      <q-card-section class="row col-12">
+    <div class="row">
+      <div class="row col-12">
         <h1 class="text-h6 q-mt-none">Oplysninger om hoppeejer/holder</h1>
         <q-input
           class="col-12"
@@ -63,8 +63,8 @@
           ]"
           debounce="500"
         ></q-input>
-      </q-card-section>
-    </q-card>
+      </div>
+    </div>
   </div>
 </template>
 

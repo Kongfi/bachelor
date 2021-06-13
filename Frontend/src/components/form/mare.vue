@@ -1,8 +1,7 @@
 <template>
   <div>
-    <q-card class="row q-my-md">
-      <q-card-section class="row col-12 q-gutter-x-sm">
-        <h1 class="text-h6 q-mt-none">Hoppe information</h1>
+    <div class="col-12">
+      <div class="row col-12">
         <q-input
           class="col-12"
           outlined
@@ -15,8 +14,8 @@
             <q-icon name="mdi-magnify" />
           </template>
         </q-input>
-      </q-card-section>
-    </q-card>
+      </div>
+    </div>
   </div>
 </template>
 

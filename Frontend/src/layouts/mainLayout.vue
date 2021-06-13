@@ -13,10 +13,6 @@
             <q-menu @before-show="openMenu" @before-hide="closeMenu">
               <q-list>
                 <q-item clickable v-close-popup>
-                  <q-btn flat dense label="Hjem" to="/" />
-                </q-item>
-                <q-separator />
-                <q-item clickable v-close-popup>
                   <q-btn flat dense label="Profil" to="/Profil" />
                 </q-item>
                 <q-separator />
@@ -59,7 +55,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-page-container class="flex fit bg-indigo-1">
+    <q-page-container class="bgColor flex fit">
       <router-view class="wrapper" />
     </q-page-container>
     <q-footer class="wrapper"></q-footer>
@@ -87,6 +83,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bgColor {
+  background: #f6f6f6;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;

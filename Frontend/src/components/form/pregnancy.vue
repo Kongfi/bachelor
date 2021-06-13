@@ -1,7 +1,7 @@
 <template>
   <div>
-    <q-card class="row q-my-md">
-      <q-card-section class="row col-12 q-gutter-sm">
+    <div class="row q-mt-md">
+      <div class="row col-12 q-gutter-sm">
         <h1 class="text-h6 col-12 q-mt-none q-mb-sm">Drægtighed oplysninger</h1>
         <div class="text-body1 text-weight-medium">
           Dato for kontrol af drægtighed*
@@ -39,8 +39,8 @@
           :options="pregOptions"
           color="primary"
         ></q-option-group>
-      </q-card-section>
-    </q-card>
+      </div>
+    </div>
   </div>
 </template>
 

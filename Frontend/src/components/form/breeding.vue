@@ -1,7 +1,7 @@
 <template>
   <div>
-    <q-card class="row q-my-md">
-      <q-card-section class="row col-12">
+    <div class="row">
+      <div class="row col-12">
         <h1 class="text-h6 col-12 q-mt-none">Bedækningsoplysninger</h1>
 
         <div class="text-body1 text-weight-medium">
@@ -36,7 +36,10 @@
           color="primary"
         ></q-option-group>
 
-        <div v-if="group == 'eggTransplant'" class="row col-12 q-gutter-x-sm">
+        <div
+          v-if="group == 'eggTransplant'"
+          class="row col-12 q-gutter-x-sm q-mt-sm"
+        >
           <q-input
             class="col-12"
             outlined
@@ -77,8 +80,8 @@
             :rules="[val => !!val || '* Påkrævet']"
           ></q-input>
         </div>
-      </q-card-section>
-    </q-card>
+      </div>
+    </div>
   </div>
 </template>
 

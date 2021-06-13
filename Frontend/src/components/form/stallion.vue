@@ -1,21 +1,20 @@
 <template>
   <div>
-    <q-card class="row q-my-md">
-      <q-card-section class="row col-12 q-gutter-x-sm">
-        <h1 class="text-h6 q-mt-none">Hingste information</h1>
+    <div class="row col-12">
+      <div class="row col-12 ">
         <q-select
-          class="col-12"
+          class="col-12 q-pb-none"
           outlined
           v-model="stallionSearch"
           :options="horses"
           option-value="id"
           option-label="name"
-          label="Hingst FEIF ID*"
+          label="Vælg hingst*"
           :rules="[val => !!val || '* Påkrævet']"
         >
         </q-select>
-      </q-card-section>
-    </q-card>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,15 +37,6 @@ export default {
       get() {
         return this.$store.state.horseStore.horses;
       }
-    }
-  },
-
-  methods: {
-    convertHorseObject(horses) {
-      horses.map(x => {
-        var obj = { id: x.id, desc: x.name };
-        return obj;
-      });
     }
   }
 };
